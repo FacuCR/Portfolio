@@ -19,14 +19,20 @@ $enable-print-styles:       true;
 //
 // Colors
 
-$primary: #003566;
-$secondary: #FFC300;
-$light: #eaeaea;
-$dark: #000814;
-$info: #8ECAE6;
+$primary: hsl(220, 95%, 50%);
+$secondary: hsl(250, 95%, 50%);
+$light: hsl(220, 95%, 98%);
+$dark: hsl(220, 100%, 9%);
+$info: hsl(280, 95%, 50%);
 $success: #28a745;
 $warning: #ffc107;
 $danger: #dc3545;
+
+$bg-gradient: linear-gradient(120deg, hsl(220, 95%, 99%) 0%, hsl(220, 95%, 84%) 100%); /*linear-gradient(
+    to top,
+    hsl(220, 95%, 99%),
+    hsl(220, 95%, 84%)
+  );*/
 
 $theme-colors: (
   primary: $primary,
@@ -39,8 +45,8 @@ $theme-colors: (
   danger: $danger
 );
 
-$body-bg: #000814;
-$body-color: #eaeaea;
+$body-bg: $dark;//#22202c;
+$body-color: $light;
 
 
 $body-color-inverse: invert($body-color) !default;
@@ -64,21 +70,23 @@ $line-height-base: 1.5;
 $headings-line-height: 1.2;
 
  
-html, body {
-  height:100%;
-  color: #fff;
-	background-color: #1f2029;
-
+body {
   transition: all 200ms linear;
+ /* Background de estilo gradiant
+  background-image: $bg-gradient;
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+  min-height: 100vh;
 }
 
 ::selection {
 	color: #fff;
-	background-color: $secondary;
+	background-color: $info;
 }
 ::-moz-selection {
 	color: #fff;
-	background-color: $secondary;
+	background-color: $info;
 }
 
 .box-shadow {
@@ -174,7 +182,7 @@ html, body {
 	border-color: transparent;
 }
 .nav-link{
-	color: #fff !important;
+	color: $dark !important;
 	font-weight: 500;
     transition: all 200ms linear;
 }
@@ -216,7 +224,7 @@ html, body {
 }
 
 .bg-light {
-	background-color: #14151a !important;
+	background: hsl(220, 95%, 98%);
     transition: all 200ms linear;
 }
 
@@ -232,6 +240,9 @@ html, body {
 ================================================== */
 
 @media (max-width: 767px) { 
+	.start-header {
+		padding: 10px 0;
+	}
 	.nav-item:after{
 		display: none;
 	}
@@ -247,6 +258,16 @@ html, body {
 		background-color: #fff;
 	}
 }
+
+
+/* Box Shadow y transparencia*/
+.overlay {
+	padding: 8rem 6rem;
+	background: rgba(255, 255, 255, 0.375);
+	box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+	border-radius: 2rem;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+  }
 
 
 /* Animaciones y hovers */
