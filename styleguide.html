@@ -27,64 +27,22 @@
     <link rel="stylesheet" href="./css/styleguide.css" />
     <link rel="stylesheet" href="./css/buttons.css" />
     <link rel="stylesheet" href="./css/column-links.css" />
+    <link rel="stylesheet" href="./css/page-transition.css" />
   </head>
 
-  <body>
-    <!-- BUTTONS -->
-    <section
-      class="buttons-section mt-5 d-flex flex-column justify-content-center align-items-center"
-    >
-      <h2 class="section-title">Buttons</h2>
-      <div class="btn btn-round is-inview">
-        <a
-          href="#"
-          class="btn-click magnetic"
-          data-strength="100"
-          data-strength-text="50"
-        >
-          <div class="btn-fill"></div>
-          <span class="btn-text">
-            <span class="btn-text-inner">Round Button</span>
-          </span>
-        </a>
+  <body data-barba="wrapper">
+    <div class="load-container">
+      <div class="loading-screen">
+        <h2 class="loading-screen__title">Styleguide</h2>
       </div>
+    </div>
 
-      <div class="btn btn-normal">
-        <a
-          href="#"
-          class="btn-click magnetic"
-          data-strength="25"
-          data-strength-text="15"
-        >
-          <div class="btn-fill"></div>
-          <span class="btn-text">
-            <span class="btn-text-inner change">Normal Button</span>
-          </span>
-        </a>
-      </div>
-
-      <div class="btn btn-normal">
-        <a
-          href="tel:+543815790020"
-          class="btn-click magnetic"
-          data-strength="25"
-          data-strength-text="15"
-        >
-          <div class="btn-fill"></div>
-          <span class="btn-text">
-            <span class="btn-text-inner change">+54 381 5 79 00 20</span>
-          </span>
-        </a>
-      </div>
-    </section>
-
-    <section class="theme-dark">
+    <main class="animate-this" data-barba="container" data-barba-namespace="styleguide-section">
+      <!-- BUTTONS -->
       <section
-        class="theme-dark__buttons py-5 d-flex flex-column justify-content-center align-items-center"
+        class="buttons-section mt-5 d-flex flex-column justify-content-center align-items-center"
       >
-        <h2 class="theme-dark__section-title section-title">
-          Dark Theme Buttons
-        </h2>
+        <h2 class="section-title">Buttons</h2>
         <div class="btn btn-round is-inview">
           <a
             href="#"
@@ -115,155 +73,206 @@
 
         <div class="btn btn-normal">
           <a
-            href="tel:+5493815790020"
+            href="tel:+543815790020"
             class="btn-click magnetic"
             data-strength="25"
             data-strength-text="15"
           >
             <div class="btn-fill"></div>
             <span class="btn-text">
-              <span class="btn-text-inner change">+54 9 381 5 79 00 20</span>
+              <span class="btn-text-inner change">+54 381 5 79 00 20</span>
             </span>
           </a>
         </div>
       </section>
-    </section>
 
-    <!-- LINKS -->
-    <section class="links-section mt-5">
-      <h2 class="section-title">Links</h2>
-      <div class="row-magnetics-links">
-        <ul class="links-wrap">
-          <li class="btn btn-link">
+      <section class="theme-dark">
+        <section
+          class="theme-dark__buttons py-5 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h2 class="theme-dark__section-title section-title">
+            Dark Theme Buttons
+          </h2>
+          <div class="btn btn-round is-inview">
             <a
               href="#"
               class="btn-click magnetic"
-              data-strength="20"
-              data-strength-text="10"
+              data-strength="100"
+              data-strength-text="50"
             >
+              <div class="btn-fill"></div>
               <span class="btn-text">
-                <span class="btn-text-inner">Row</span>
+                <span class="btn-text-inner">Round Button</span>
               </span>
             </a>
-          </li>
-          <li class="btn btn-link">
-            <a
-              href="#"
-              class="btn-click magnetic"
-              data-strength="20"
-              data-strength-text="10"
-            >
-              <span class="btn-text">
-                <span class="btn-text-inner">Magnetics</span>
-              </span>
-            </a>
-          </li>
-          <li class="btn btn-link">
-            <a
-              href="#"
-              class="btn-click magnetic"
-              data-strength="20"
-              data-strength-text="10"
-            >
-              <span class="btn-text">
-                <span class="btn-text-inner">Links</span>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
+          </div>
 
-      <div class="column-magnetics-links">
-        <div class="fixed-nav theme-dark">
-          <div class="fixed-nav-inner">
-            <div class="row nav-row">
-              <ul class="links-wrap">
-                <li class="btn btn-link active">
-                  <a
-                    href="#"
-                    class="btn-click magnetic"
-                    data-strength="24"
-                    data-strength-text="12"
-                  >
-                    <span class="btn-text">
-                      <span class="btn-text-inner">Column</span>
-                    </span>
-                  </a>
-                </li>
-                <li class="btn btn-link">
-                  <a
-                    href="#"
-                    class="btn-click magnetic"
-                    data-strength="24"
-                    data-strength-text="12"
-                  >
-                    <span class="btn-text">
-                      <span class="btn-text-inner">Magnetics</span>
-                    </span>
-                  </a>
-                </li>
-                <li class="btn btn-link">
-                  <a
-                    href="#"
-                    class="btn-click magnetic"
-                    data-strength="24"
-                    data-strength-text="12"
-                  >
-                    <span class="btn-text">
-                      <span class="btn-text-inner">Links</span>
-                    </span>
-                  </a>
-                </li>
-                <li class="btn btn-link">
-                  <a
-                    href="#"
-                    class="btn-click magnetic"
-                    data-strength="24"
-                    data-strength-text="12"
-                  >
-                    <span class="btn-text">
-                      <span class="btn-text-inner">Menu</span>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="row social-row">
-              <div class="socials">
-                <ul>
-                  <li class="btn btn-link btn-link-external">
+          <div class="btn btn-normal">
+            <a
+              href="#"
+              class="btn-click magnetic"
+              data-strength="25"
+              data-strength-text="15"
+            >
+              <div class="btn-fill"></div>
+              <span class="btn-text">
+                <span class="btn-text-inner change">Normal Button</span>
+              </span>
+            </a>
+          </div>
+
+          <div class="btn btn-normal">
+            <a
+              href="tel:+5493815790020"
+              class="btn-click magnetic"
+              data-strength="25"
+              data-strength-text="15"
+            >
+              <div class="btn-fill"></div>
+              <span class="btn-text">
+                <span class="btn-text-inner change">+54 9 381 5 79 00 20</span>
+              </span>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <!-- LINKS -->
+      <section class="links-section mt-5">
+        <h2 class="section-title">Links</h2>
+        <div class="row-magnetics-links">
+          <ul class="links-wrap">
+            <li class="btn btn-link">
+              <a
+                href="#"
+                class="btn-click magnetic"
+                data-strength="20"
+                data-strength-text="10"
+              >
+                <span class="btn-text">
+                  <span class="btn-text-inner">Row</span>
+                </span>
+              </a>
+            </li>
+            <li class="btn btn-link">
+              <a
+                href="#"
+                class="btn-click magnetic"
+                data-strength="20"
+                data-strength-text="10"
+              >
+                <span class="btn-text">
+                  <span class="btn-text-inner">Magnetics</span>
+                </span>
+              </a>
+            </li>
+            <li class="btn btn-link">
+              <a
+                href="#"
+                class="btn-click magnetic"
+                data-strength="20"
+                data-strength-text="10"
+              >
+                <span class="btn-text">
+                  <span class="btn-text-inner">Links</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column-magnetics-links">
+          <div class="fixed-nav theme-dark">
+            <div class="fixed-nav-inner">
+              <div class="nav-row">
+                <ul class="links-wrap">
+                  <li class="btn btn-link active">
                     <a
                       href="#"
-                      target="_blank"
                       class="btn-click magnetic"
-                      data-strength="20"
-                      data-strength-text="10"
+                      data-strength="24"
+                      data-strength-text="12"
                     >
                       <span class="btn-text">
-                        <span class="btn-text-inner">Socials</span>
+                        <span class="btn-text-inner">Column</span>
                       </span>
                     </a>
                   </li>
-                  <li class="btn btn-link btn-link-external">
+                  <li class="btn btn-link">
                     <a
                       href="#"
-                      target="_blank"
                       class="btn-click magnetic"
-                      data-strength="20"
-                      data-strength-text="10"
+                      data-strength="24"
+                      data-strength-text="12"
+                    >
+                      <span class="btn-text">
+                        <span class="btn-text-inner">Magnetics</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="btn btn-link">
+                    <a
+                      href="#"
+                      class="btn-click magnetic"
+                      data-strength="24"
+                      data-strength-text="12"
                     >
                       <span class="btn-text">
                         <span class="btn-text-inner">Links</span>
                       </span>
                     </a>
                   </li>
+                  <li class="btn btn-link">
+                    <a
+                      href="#"
+                      class="btn-click magnetic"
+                      data-strength="24"
+                      data-strength-text="12"
+                    >
+                      <span class="btn-text">
+                        <span class="btn-text-inner">Menu</span>
+                      </span>
+                    </a>
+                  </li>
                 </ul>
+              </div>
+              <div class="social-row">
+                <div class="socials">
+                  <ul>
+                    <li class="btn btn-link btn-link-external">
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="btn-click magnetic"
+                        data-strength="20"
+                        data-strength-text="10"
+                      >
+                        <span class="btn-text">
+                          <span class="btn-text-inner">Socials</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="btn btn-link btn-link-external">
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="btn-click magnetic"
+                        data-strength="20"
+                        data-strength-text="10"
+                      >
+                        <span class="btn-text">
+                          <span class="btn-text-inner">Links</span>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -275,7 +284,9 @@
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="./js/magnetic.js"></script>
+    <script src="./js/page-transition.js"></script>
   </body>
 </html>
