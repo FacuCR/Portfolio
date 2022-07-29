@@ -26,8 +26,9 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styleguide.css" />
     <link rel="stylesheet" href="./css/buttons.css" />
-    <link rel="stylesheet" href="./css/column-links.css" />
     <link rel="stylesheet" href="./css/page-transition.css" />
+    <link rel="stylesheet" href="./css/fixed-nav.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
   </head>
 
   <body data-barba="wrapper">
@@ -37,10 +38,127 @@
       </div>
     </div>
 
-    <main class="animate-this" data-barba="container" data-barba-namespace="styleguide-section">
+    <main
+      data-barba="container"
+      data-barba-namespace="styleguide-section"
+    >
+      <header>
+        <div class="btn btn-hamburger">
+          <div
+            class="btn-click magnetic"
+            data-strength="50"
+            data-strength-text="25"
+          >
+            <div class="btn-fill"></div>
+            <div class="btn-text">
+              <div class="btn-bars"></div>
+              <span class="btn-text-inner">Menu</span>
+            </div>
+          </div>
+        </div>
+        <div class="overlay fixed-nav-back"></div>
+        <div class="fixed-nav theme-dark">
+          <div class="fixed-nav-rounded-div">
+            <div class="rounded-div-wrap">
+              <div class="rounded-div"></div>
+            </div>
+          </div>
+          <div class="fixed-nav-inner">
+            <div class="row nav-row">
+              <h5 class="nav-title">Navigation</h5>
+              <div class="stripe"></div>
+              <ul class="links-wrap">
+                <li class="btn btn-link active">
+                  <a
+                    href="#"
+                    class="btn-click magnetic"
+                    data-strength="24"
+                    data-strength-text="12"
+                  >
+                    <span class="btn-text">
+                      <span class="btn-text-inner">Home</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="btn btn-link">
+                  <a
+                    href="#"
+                    class="btn-click magnetic"
+                    data-strength="24"
+                    data-strength-text="12"
+                  >
+                    <span class="btn-text">
+                      <span class="btn-text-inner">Work</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="btn btn-link">
+                  <a
+                    href="#"
+                    class="btn-click magnetic"
+                    data-strength="24"
+                    data-strength-text="12"
+                  >
+                    <span class="btn-text">
+                      <span class="btn-text-inner">About</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="btn btn-link">
+                  <a
+                    href="#"
+                    class="btn-click magnetic"
+                    data-strength="24"
+                    data-strength-text="12"
+                  >
+                    <span class="btn-text">
+                      <span class="btn-text-inner">Contact</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="row social-row">
+              <div class="stripe"></div>
+              <div class="socials">
+                <h5 class="nav-title">Socials</h5>
+                <ul class="social-row__list">
+                  <li class="btn btn-link btn-link-external">
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="btn-click magnetic"
+                      data-strength="20"
+                      data-strength-text="10"
+                    >
+                      <span class="btn-text">
+                        <span class="btn-text-inner">Instagram</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="btn btn-link btn-link-external">
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="btn-click magnetic"
+                      data-strength="20"
+                      data-strength-text="10"
+                    >
+                      <span class="btn-text">
+                        <span class="btn-text-inner">Facebook</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
       <!-- BUTTONS -->
       <section
-        class="buttons-section mt-5 d-flex flex-column justify-content-center align-items-center"
+        class="animate-this buttons-section mt-5 d-flex flex-column justify-content-center align-items-center"
       >
         <h2 class="section-title">Buttons</h2>
         <div class="btn btn-round is-inview">
@@ -86,7 +204,7 @@
         </div>
       </section>
 
-      <section class="theme-dark">
+      <section class="animate-this theme-dark">
         <section
           class="theme-dark__buttons py-5 d-flex flex-column justify-content-center align-items-center"
         >
@@ -137,141 +255,7 @@
         </section>
       </section>
 
-      <!-- LINKS -->
-      <section class="links-section mt-5">
-        <h2 class="section-title">Links</h2>
-        <div class="row-magnetics-links">
-          <ul class="links-wrap">
-            <li class="btn btn-link">
-              <a
-                href="#"
-                class="btn-click magnetic"
-                data-strength="20"
-                data-strength-text="10"
-              >
-                <span class="btn-text">
-                  <span class="btn-text-inner">Row</span>
-                </span>
-              </a>
-            </li>
-            <li class="btn btn-link">
-              <a
-                href="#"
-                class="btn-click magnetic"
-                data-strength="20"
-                data-strength-text="10"
-              >
-                <span class="btn-text">
-                  <span class="btn-text-inner">Magnetics</span>
-                </span>
-              </a>
-            </li>
-            <li class="btn btn-link">
-              <a
-                href="#"
-                class="btn-click magnetic"
-                data-strength="20"
-                data-strength-text="10"
-              >
-                <span class="btn-text">
-                  <span class="btn-text-inner">Links</span>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="column-magnetics-links">
-          <div class="fixed-nav theme-dark">
-            <div class="fixed-nav-inner">
-              <div class="nav-row">
-                <ul class="links-wrap">
-                  <li class="btn btn-link active">
-                    <a
-                      href="#"
-                      class="btn-click magnetic"
-                      data-strength="24"
-                      data-strength-text="12"
-                    >
-                      <span class="btn-text">
-                        <span class="btn-text-inner">Column</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="btn btn-link">
-                    <a
-                      href="#"
-                      class="btn-click magnetic"
-                      data-strength="24"
-                      data-strength-text="12"
-                    >
-                      <span class="btn-text">
-                        <span class="btn-text-inner">Magnetics</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="btn btn-link">
-                    <a
-                      href="#"
-                      class="btn-click magnetic"
-                      data-strength="24"
-                      data-strength-text="12"
-                    >
-                      <span class="btn-text">
-                        <span class="btn-text-inner">Links</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="btn btn-link">
-                    <a
-                      href="#"
-                      class="btn-click magnetic"
-                      data-strength="24"
-                      data-strength-text="12"
-                    >
-                      <span class="btn-text">
-                        <span class="btn-text-inner">Menu</span>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="social-row">
-                <div class="socials">
-                  <ul>
-                    <li class="btn btn-link btn-link-external">
-                      <a
-                        href="#"
-                        target="_blank"
-                        class="btn-click magnetic"
-                        data-strength="20"
-                        data-strength-text="10"
-                      >
-                        <span class="btn-text">
-                          <span class="btn-text-inner">Socials</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li class="btn btn-link btn-link-external">
-                      <a
-                        href="#"
-                        target="_blank"
-                        class="btn-click magnetic"
-                        data-strength="20"
-                        data-strength-text="10"
-                      >
-                        <span class="btn-text">
-                          <span class="btn-text-inner">Links</span>
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
     </main>
 
     <script
@@ -288,5 +272,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="./js/magnetic.js"></script>
     <script src="./js/page-transition.js"></script>
+    <script src="./js/hamburguerNav.js"></script>
   </body>
 </html>

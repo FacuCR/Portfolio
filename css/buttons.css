@@ -166,18 +166,6 @@
   transform: translate(-50%, -50%) scale(1) rotate(0.001deg);
 }
 
-.links-wrap {
-  display: flex;
-}
-
-.links-wrap:hover .btn-link .btn-click::after {
-  transform: translate(-50%, -50%) scale(0) rotate(0.001deg);
-}
-
-.links-wrap:hover .btn-link .btn-click:hover::after {
-  transform: translate(-50%, -50%) scale(1) rotate(0.001deg);
-}
-
 .theme-dark .btn-link .btn-text {
   color: var(--color-white);
 }
